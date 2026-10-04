@@ -1,0 +1,13 @@
+,registros
+"customers_orgs.nps_score fuera de [0,10]",59
+"nps_surveys.nps_score fuera de [0,10]",66
+support_tickets.csat > 5,29
+support_tickets abiertos (resolved_at nulo),240
+support_tickets resolved_at > 2025-08-31,34
+users last_login < created_at,232
+resources tags_json nulo,83
+billing_monthly subtotal < 0,13
+usage_events value como texto,1309
+usage_events unit nula,2075
+usage_events costo < 0,216
+usage_events spike (>5×p99),49

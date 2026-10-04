@@ -1,0 +1,63 @@
+digraph arquitectura {
+  graph [rankdir=LR, fontname="Helvetica", fontsize=13, nodesep=0.35, ranksep=0.55, splines=spline, bgcolor="white", pad=0.3, newrank=true];
+  node  [fontname="Helvetica", fontsize=11, shape=box, style="rounded,filled", fillcolor="#ffffff", color="#8a8984", penwidth=1.2, margin="0.15,0.08"];
+  edge  [fontname="Helvetica", fontsize=9, color="#52514e", arrowsize=0.7, fontcolor="#52514e"];
+
+  subgraph cluster_src { label=<<b>Fuentes</b>>; style="rounded,dashed"; color="#b9b8b2"; fontcolor="#0b0b0b";
+    f1 [label=<<b>Maestros CRM</b><br/>customers_orgs · users · resources<br/><font color="#52514e"><i>CSV · snapshot diario</i></font>>];
+    f2 [label=<<b>Operación</b><br/>support_tickets · marketing_touches<br/>nps_surveys<br/><font color="#52514e"><i>CSV · diario</i></font>>];
+    f3 [label=<<b>Facturación</b><br/>billing_monthly<br/><font color="#52514e"><i>CSV · mensual</i></font>>];
+    f4 [label=<<b>Eventos de uso</b><br/>usage_events_stream/*.jsonl<br/><font color="#52514e"><i>micro-lotes continuos</i></font>>];
+  }
+
+  land [shape=cylinder, fillcolor="#eceae4", color="#6b6a64", label=<<b>LANDING</b><br/>raw inmutable<br/>CSV · JSONL>];
+
+  subgraph cluster_batch { label=<<b>Camino batch</b> · Spark batch · orquestado con Airflow (cron en Colab)>; style="rounded,filled"; fillcolor="#f7f7f5"; color="#b9b8b2";
+    b1 [label=<<b>Ingesta batch</b><br/>read CSV · schema explícito<br/>diario 02:00 · mensual día 1>];
+    b2 [shape=cylinder, fillcolor="#f3dcc4", color="#a8642a", label=<<b>BRONZE</b><br/>maestros · tickets · marketing<br/>nps · billing>];
+    b3 [shape=cylinder, fillcolor="#e3e6ea", color="#6c7686", label=<<b>SILVER</b><br/>dimensiones y hechos<br/>conformados · FX a USD>];
+    b4 [label=<<b>Cierre D+1</b><br/>recalcula el día anterior<br/>conciliación billing vs uso>];
+    b1 -> b2 -> b3 -> b4;
+  }
+
+  subgraph cluster_speed { label=<<b>Camino rápido</b> · Spark Structured Streaming · trigger 1 min>; style="rounded,filled"; fillcolor="#f2f6fc"; color="#9ec5f4";
+    s1 [label=<<b>Ingesta streaming</b><br/>readStream JSONL<br/>schema explícito · checkpoint>];
+    s2 [shape=cylinder, fillcolor="#f3dcc4", color="#a8642a", label=<<b>BRONZE</b><br/>usage_events<br/>+ ingest_ts · source_file>];
+    s3 [shape=cylinder, fillcolor="#e3e6ea", color="#6c7686", label=<<b>SILVER</b><br/>usage_events<br/>cast · unit · v1/v2 · flags<br/>dedupe event_id>];
+    s4 [label=<<b>foreachBatch</b><br/>recalcula las claves<br/>(org, fecha, servicio)<br/>tocadas en el lote>];
+    s1 -> s2 -> s3 -> s4;
+  }
+
+  q [shape=cylinder, fillcolor="#f6d0d0", color="#c03a3a", label=<<b>QUARANTINE</b><br/>registros inválidos<br/>+ motivo>];
+
+  subgraph cluster_gold { label=<<b>Gold</b> · marts Parquet>; style="rounded,filled"; fillcolor="#fdf7e1"; color="#d9b84a";
+    node [fillcolor="#f8e7a8", color="#b08a00"];
+    g1 [label=<org_daily_usage_by_service<br/><font color="#52514e"><i>org · fecha · servicio</i></font>>];
+    g2 [label=<cost_anomaly_mart<br/><font color="#52514e"><i>org · fecha · servicio</i></font>>];
+    g3 [label=<genai_tokens_by_org_date<br/><font color="#52514e"><i>org · fecha</i></font>>];
+    g4 [label=<revenue_by_org_month<br/><font color="#52514e"><i>org · mes</i></font>>];
+    g5 [label=<tickets_by_org_date<br/><font color="#52514e"><i>org · fecha · severidad</i></font>>];
+  }
+
+  srv [shape=cylinder, fillcolor="#d6e6fa", color="#2a78d6", label=<<b>SERVING</b><br/>Cassandra / AstraDB<br/>tablas query-first<br/>upsert por clave natural>];
+
+  subgraph cluster_use { label=<<b>Consumo</b>>; style="rounded,dashed"; color="#b9b8b2";
+    u1 [label="FinOps"]; u2 [label="Soporte"]; u3 [label="Producto / Usage"];
+  }
+
+  {f1 f2 f3} -> land;
+  f4 -> land;
+  land -> b1 [label="CSV"];
+  land -> s1 [label="JSONL"];
+  b3 -> s3 [style=dashed, label="join stream-static\n(dimensiones)", constraint=false];
+  s3 -> b4 [style=dashed, label="eventos\nconformados", constraint=false];
+  b2 -> q [style=dotted, color="#c03a3a"];
+  s2 -> q [style=dotted, color="#c03a3a"];
+  b3 -> q [style=dotted, color="#c03a3a"];
+  s3 -> q [style=dotted, color="#c03a3a", label="inválidos", fontcolor="#c03a3a"];
+
+  s4 -> {g1 g2 g3} [color="#2a78d6", penwidth=1.6];
+  b4 -> {g1 g2 g3 g4 g5};
+  {g1 g2 g3 g4 g5} -> srv;
+  srv -> {u1 u2 u3};
+}
