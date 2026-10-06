@@ -1,9 +1,0 @@
-fuente,filas,columnas,clave_unica,nulos
-customers_orgs,80,11,True,nps_score=11
-users,800,7,True,last_login=139
-resources,400,7,True,tags_json=83
-support_tickets,1000,8,True,"resolved_at=240, csat=254"
-marketing_touches,1500,7,True,—
-nps_surveys,92,4,— (varias por org),"nps_score=19, comment=10"
-billing_monthly,240,8,True,credits=137
-usage_events_stream,43200,13,True,"value=877, unit=2075, carbon_kg=10800, genai_tokens=40068"

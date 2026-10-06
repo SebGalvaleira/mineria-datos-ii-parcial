@@ -1,9 +1,2 @@
-data/datalake/bronze/
-data/datalake/silver/
-data/datalake/gold/
-data/datalake/quarantine/
-checkpoints/
-__pycache__/
+.venv/
 .ipynb_checkpoints/
-.env
-*.log
