@@ -1,7 +1,7 @@
 # Cloud Provider Analytics — Documento de diseño · Entrega 1
 
 **Materia:** Minería de Datos II · ISTEA 2C 2026
-**Autor:** Sebastián
+**Equipo:** David Riveros · Maria Lopez · Ramon Ojea Espil · Sebastián
 
 ---
 

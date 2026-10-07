@@ -1,6 +1,15 @@
 # Cloud Provider Analytics — Proyecto Integrador
 
-**Minería de Datos II · ISTEA 2C 2026** · Autor: Sebastián
+**Minería de Datos II · ISTEA 2C 2026** · Prof. Diego Mosquera
+
+## Equipo
+
+| Integrante | GitHub |
+|---|---|
+| David Riveros | [@Davoo0o](https://github.com/Davoo0o) |
+| Maria Lopez | [@MariaLopez1999](https://github.com/MariaLopez1999) |
+| Ramon Ojea Espil | [@Reimonoo](https://github.com/Reimonoo) |
+| Sebastián Gonzalez | [@SebGalvaleira](https://github.com/SebGalvaleira) |
 
 Diseño de un pipeline de datos para un proveedor de nube: ingesta batch y streaming, Data Lake (Landing → Bronze → Silver → Gold) en Parquet y marts para FinOps, Soporte y Producto servidos en Cassandra/AstraDB.
 
