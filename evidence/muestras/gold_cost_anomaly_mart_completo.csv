@@ -1,0 +1,290 @@
+org_id,service,industry,plan_tier,eventos,daily_cost_usd,mediana_serie,mad_serie,z_robusto,regla_pico,pico_relativo,regla_negativo,motivo,updated_at,event_date
+org_axeqbnhl,storage,healthcare,standard,3,2.2414,2.6481,1.8022,-0.15,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-03
+org_cvs4f8cg,networking,gaming,standard,6,1.9183,2.771,1.3935,-0.41,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-03
+org_okep7y6w,compute,education,enterprise,3,202.646,11.1426,2.7475,47.01,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-03
+org_rixa11dp,database,government,standard,3,75.6526,8.0359,3.7345,12.21,False,True,False,pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-03
+org_n9j2qp89,compute,retail,standard,6,35.0909,20.6201,11.1679,0.87,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-03
+org_tvhhpbmy,genai,healthcare,enterprise,3,313.4168,18.4484,9.1345,21.78,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-04
+org_c11ertj5,storage,retail,pro,3,2.8251,3.5941,1.512,-0.34,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-04
+org_0lvsnujz,storage,retail,standard,3,-1.5052,5.2266,2.0989,-2.16,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-04
+org_w3zp08j3,networking,education,standard,3,27.4203,1.4849,0.4944,35.38,False,True,False,pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-05
+org_c11ertj5,genai,retail,pro,3,-0.9611,17.7948,13.0387,-0.97,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-05
+org_h2m5zja8,genai,manufacturing,standard,3,5.8058,34.4817,13.5486,-1.43,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-05
+org_dppq0y9d,genai,manufacturing,standard,6,1.7708,27.8957,12.9861,-1.36,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-05
+org_5935a0l7,compute,gaming,standard,3,2.1069,19.4395,8.0837,-1.45,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-06
+org_0lvsnujz,storage,retail,standard,6,3.3128,5.2266,2.0989,-0.62,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-06
+org_53lc58dr,storage,energy,standard,3,-2.208,2.9711,1.9686,-1.77,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-06
+org_teiyzcot,compute,healthcare,pro,6,189.4048,18.2411,6.4961,17.77,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-06
+org_ujv6oh9s,storage,energy,enterprise,9,6.9427,6.1533,2.9173,0.18,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-06
+org_phr62gds,storage,education,enterprise,6,6.4705,4.6688,2.144,0.57,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-06
+org_afeyuhz1,compute,education,standard,6,227.094,19.4832,8.9003,15.73,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-07
+org_tvhhpbmy,storage,healthcare,enterprise,3,9.8025,2.8569,0.8883,5.27,False,True,False,pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-07
+org_3t60rjiw,compute,gaming,enterprise,3,-0.2664,17.1284,8.2537,-1.42,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-07
+org_chj755nf,compute,fintech,pro,6,27.5385,22.2086,10.3776,0.35,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-07
+org_5iqvnb4g,networking,manufacturing,enterprise,3,2.5307,2.4831,1.1354,0.03,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-07
+org_pbhsahxt,analytics,education,standard,3,2.143,8.9176,6.6073,-0.69,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-07
+org_dppq0y9d,compute,manufacturing,standard,9,30.9916,26.2457,11.5321,0.28,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-08
+org_i7p5tb94,storage,manufacturing,free,3,2.4304,5.2481,2.3046,-0.82,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-08
+org_53lc58dr,compute,energy,standard,3,184.692,18.6698,8.7727,12.76,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-08
+org_ujv6oh9s,storage,energy,enterprise,9,50.6858,6.1533,2.9173,10.3,False,True,False,pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-08
+org_w3zp08j3,compute,education,standard,3,8.1288,10.3146,6.4964,-0.23,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-08
+org_5lxo6qji,database,healthcare,free,3,3.0306,7.4016,1.9117,-1.54,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-08
+org_y9v86wzs,networking,retail,pro,3,21.8161,1.5516,0.6067,22.53,False,True,False,pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-08
+org_1t2tala7,analytics,media,enterprise,3,188.9536,11.2824,5.2194,22.96,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-09
+org_5935a0l7,compute,gaming,standard,6,271.6404,19.4395,8.0837,21.04,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-09
+org_ktakpuxq,compute,fintech,pro,9,29.2993,40.2664,12.0767,-0.61,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-09
+org_teiyzcot,compute,healthcare,pro,6,35.958,18.2411,6.4961,1.84,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-09
+org_chj755nf,compute,fintech,pro,6,33.7563,22.2086,10.3776,0.75,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-09
+org_om5igqpk,analytics,energy,pro,6,9.2368,16.3633,7.2004,-0.67,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-09
+org_x7eedtjv,compute,energy,pro,3,311.255,13.8981,4.3827,45.76,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-09
+org_ujv6oh9s,analytics,energy,enterprise,3,27.5278,9.6294,2.1978,5.49,False,True,False,pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-10
+org_874frhoc,networking,healthcare,free,3,-0.0155,1.708,0.6065,-1.92,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-10
+org_tvhhpbmy,compute,healthcare,enterprise,3,204.9628,10.914,6.1053,21.44,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-10
+org_zhwjr64d,compute,retail,standard,6,11.1317,19.1197,6.2981,-0.86,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-10
+org_c11ertj5,database,retail,pro,6,118.8127,12.1664,4.7,15.3,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-11
+org_g0fn9xuy,networking,e-commerce,free,3,0.3396,1.8033,0.5924,-1.67,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-11
+org_uzfk8ut0,compute,government,standard,6,227.781,19.0778,9.1882,15.32,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-11
+org_c11ertj5,genai,retail,pro,3,334.6767,17.7948,13.0387,16.39,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-11
+org_wm31yiha,database,healthcare,standard,3,1.2022,7.48,3.1829,-1.33,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-11
+org_ly8ozcyw,storage,government,standard,3,0.0995,3.1403,1.0177,-2.02,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-11
+org_5iqvnb4g,networking,manufacturing,enterprise,3,31.9191,2.4831,1.1354,17.49,False,True,False,pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-11
+org_1n13jcat,storage,healthcare,free,3,1.2231,2.5622,2.111,-0.43,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-12
+org_4zw9xa3k,analytics,manufacturing,standard,6,160.3064,17.4843,9.2386,10.43,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-12
+org_8mdd4v30,storage,manufacturing,standard,3,7.6512,2.5646,0.5749,5.97,False,True,False,pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-12
+org_d14ve92m,compute,education,pro,6,20.4588,20.4588,8.8194,0.0,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-12
+org_pseimvih,storage,fintech,standard,6,7.95,4.7616,2.628,0.82,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-12
+org_sg65kxvf,database,e-commerce,standard,6,21.1323,11.7359,5.0951,1.24,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-12
+org_dhylurtp,compute,fintech,pro,6,7.9641,20.2929,9.7117,-0.86,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-12
+org_5iqvnb4g,networking,manufacturing,enterprise,3,-0.1357,2.4831,1.1354,-1.56,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-12
+org_h2m5zja8,networking,manufacturing,standard,6,0.0624,2.8812,1.2027,-1.58,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-13
+org_he7ur23g,compute,gaming,free,12,2.2588,28.9658,10.9074,-1.65,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-13
+org_sg65kxvf,genai,e-commerce,standard,6,9.222,28.8878,14.3218,-0.93,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-13
+org_jxepq85j,database,gaming,free,3,4.8609,7.3223,3.3943,-0.49,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-13
+org_cvs4f8cg,database,gaming,standard,3,-0.8589,7.4,4.4501,-1.25,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-13
+org_ly8ozcyw,storage,government,standard,3,2.6583,3.1403,1.0177,-0.32,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-13
+org_1n13jcat,compute,healthcare,free,3,0.1273,21.34,12.1928,-1.17,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-13
+org_5935a0l7,database,gaming,standard,3,-1.3533,14.6994,5.7523,-1.88,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-14
+org_i7p5tb94,compute,manufacturing,free,6,-5.725,17.2472,7.5089,-2.06,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-14
+org_pht0hl9x,storage,government,pro,3,2.5933,4.1305,1.464,-0.71,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-14
+org_xaji0y6d,compute,education,standard,3,9.7999,12.6133,4.7003,-0.4,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-14
+org_ir4cowgz,storage,manufacturing,standard,3,-1.4165,4.897,2.0785,-2.05,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-14
+org_kdgigatj,compute,gaming,standard,6,-6.5755,28.2806,9.9852,-2.35,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-14
+org_t1ghr09s,networking,gaming,standard,3,0.2659,1.7158,0.7814,-1.25,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-15
+org_5935a0l7,compute,gaming,standard,6,264.4856,19.4395,8.0837,20.45,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-15
+org_he7ur23g,networking,gaming,free,3,2.0662,2.3715,1.1605,-0.18,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-15
+org_i3qk2iag,genai,gaming,standard,3,2.4254,27.888,12.5494,-1.37,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-15
+org_cvs4f8cg,genai,gaming,standard,3,18.0426,18.6679,7.0455,-0.06,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-15
+org_n9j2qp89,analytics,retail,standard,3,-1.3606,9.4564,5.9954,-1.22,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-15
+org_vyie6ivw,networking,government,pro,3,-1.0046,1.5162,0.4448,-3.82,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-15
+org_h2m5zja8,networking,manufacturing,standard,6,-0.1541,2.8812,1.2027,-1.7,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-16
+org_w3zp08j3,networking,education,standard,3,26.4157,1.4849,0.4944,34.01,False,True,False,pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-16
+org_dbdw2pcn,database,retail,standard,3,1.2221,9.3202,3.1344,-1.74,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-16
+org_nam148p0,compute,government,standard,6,27.2536,21.1279,8.4241,0.49,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-16
+org_ujv6oh9s,storage,energy,enterprise,9,6.1533,6.1533,2.9173,0.0,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-16
+org_teiyzcot,networking,healthcare,pro,3,23.9905,2.5987,1.07,13.48,False,True,False,pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-16
+org_pnsm43d8,storage,manufacturing,standard,3,56.6704,3.5804,1.291,27.74,False,True,False,pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-17
+org_874frhoc,networking,healthcare,free,3,27.651,1.708,0.6065,28.85,False,True,False,pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-17
+org_pnsm43d8,compute,manufacturing,standard,9,16.4127,46.7553,17.9715,-1.14,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-17
+org_ujv6oh9s,storage,energy,enterprise,3,39.8406,6.1533,2.9173,7.79,False,True,False,pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-17
+org_d14ve92m,storage,education,pro,6,4.0797,4.0325,2.4956,0.01,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-17
+org_kdgigatj,compute,gaming,standard,9,251.643,28.2806,9.9852,15.09,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-17
+org_pac56t4u,compute,healthcare,enterprise,9,235.5387,24.8895,14.9647,9.49,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-18
+org_jxepq85j,networking,gaming,free,6,1.7119,2.2517,0.9053,-0.4,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-18
+org_axeqbnhl,networking,healthcare,standard,3,1.1596,2.183,0.9412,-0.73,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-18
+org_dbdw2pcn,database,retail,standard,6,107.6786,9.3202,3.1344,21.17,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-18
+org_y9v86wzs,compute,retail,pro,6,11.2859,20.3791,9.6287,-0.64,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-19
+org_jxepq85j,networking,gaming,free,3,1.0416,2.2517,0.9053,-0.9,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-19
+org_ujv6oh9s,database,energy,enterprise,3,142.7731,8.9005,3.3872,26.66,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-19
+org_d14ve92m,analytics,education,pro,3,181.7988,10.701,4.071,28.35,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-20
+org_g8sbi4q2,database,gaming,standard,3,-5.3119,10.3302,3.3226,-3.18,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-20
+org_pseimvih,storage,fintech,standard,6,12.6262,4.7616,2.628,2.02,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-20
+org_sg65kxvf,database,e-commerce,standard,3,-3.3887,11.7359,5.0951,-2.0,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-20
+org_7e8g8jdp,networking,manufacturing,standard,3,27.1867,1.4303,1.076,16.15,False,True,False,pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-20
+org_pac56t4u,compute,healthcare,enterprise,9,66.7145,24.8895,14.9647,1.89,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-21
+org_pseimvih,storage,fintech,standard,3,2.3559,4.7616,2.628,-0.62,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-21
+org_ir4cowgz,analytics,manufacturing,standard,6,229.7084,14.879,5.9616,24.31,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-21
+org_53lc58dr,database,energy,standard,6,7.1981,11.6954,5.4745,-0.55,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-22
+org_ujv6oh9s,database,energy,enterprise,3,5.583,8.9005,3.3872,-0.66,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-22
+org_pbhsahxt,analytics,education,standard,3,0.1248,8.9176,6.6073,-0.9,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-22
+org_chj755nf,networking,fintech,pro,3,23.9456,1.3953,1.0391,14.64,False,True,False,pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-23
+org_he7ur23g,database,gaming,free,3,150.5344,7.3123,4.0826,23.66,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-23
+org_sg65kxvf,genai,e-commerce,standard,3,24.4517,28.8878,14.3218,-0.21,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-23
+org_nam148p0,storage,government,standard,12,12.5337,8.0225,3.3164,0.92,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-23
+org_kdgigatj,database,gaming,standard,6,147.3653,14.3557,6.0004,14.95,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-23
+org_253j2d54,analytics,gaming,standard,3,-5.404,9.9322,6.7737,-1.53,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-24
+org_n9j2qp89,storage,retail,standard,3,0.0701,2.8554,1.5476,-1.21,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-24
+org_1n13jcat,database,healthcare,free,6,11.4088,14.8599,4.4638,-0.52,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-24
+org_l58kxo9t,compute,e-commerce,pro,3,7.3582,18.253,7.5389,-0.97,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-25
+org_rixa11dp,database,government,standard,3,-5.663,8.0359,3.7345,-2.47,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-25
+org_gv0e38da,storage,government,pro,3,0.5243,2.7873,1.955,-0.78,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-25
+org_chj755nf,genai,fintech,pro,6,15.0125,24.2324,7.7974,-0.8,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-25
+org_0lvsnujz,analytics,retail,standard,3,-0.1012,17.0577,9.0405,-1.28,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-25
+org_c11ertj5,database,retail,pro,3,0.1625,12.1664,4.7,-1.72,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-26
+org_sg65kxvf,genai,e-commerce,standard,6,10.9467,28.8878,14.3218,-0.84,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-26
+org_teiyzcot,networking,healthcare,pro,6,0.2277,2.5987,1.07,-1.49,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-26
+org_1swjckjl,database,government,standard,9,23.8487,24.6874,7.8896,-0.07,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-27
+org_teiyzcot,analytics,healthcare,pro,6,20.6473,18.4017,7.4749,0.2,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-27
+org_sg65kxvf,database,e-commerce,standard,3,-6.7496,11.7359,5.0951,-2.45,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-27
+org_dhylurtp,compute,fintech,pro,3,-9.0011,20.2929,9.7117,-2.03,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-27
+org_ykl1cq99,storage,energy,pro,3,4.9023,3.9844,1.2489,0.5,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-27
+org_ly8ozcyw,analytics,government,standard,6,16.1924,15.2636,4.736,0.13,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-27
+org_kdgigatj,networking,gaming,standard,12,5.006,4.0197,1.769,0.38,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-28
+org_5935a0l7,analytics,gaming,standard,3,24.6405,9.1542,1.6949,6.16,False,True,False,pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-28
+org_h2m5zja8,genai,manufacturing,standard,6,12.2981,34.4817,13.5486,-1.1,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-28
+org_chj755nf,compute,fintech,pro,3,-8.3109,22.2086,10.3776,-1.98,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-28
+org_rixa11dp,analytics,government,standard,3,122.4493,9.4788,6.2404,12.21,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-28
+org_afeyuhz1,compute,education,standard,3,-2.7747,19.4832,8.9003,-1.69,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-29
+org_874frhoc,storage,healthcare,free,3,50.1847,3.5399,1.5994,19.67,False,True,False,pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-29
+org_l58kxo9t,networking,e-commerce,pro,3,-0.8018,1.5842,0.9141,-1.76,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-29
+org_41ibljh7,compute,education,standard,3,0.5381,11.5044,2.0992,-3.52,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-29
+org_dhylurtp,database,fintech,pro,3,0.2357,8.4123,5.3747,-1.03,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-29
+org_zbikcidk,compute,retail,pro,6,236.1087,20.452,10.0478,14.48,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-07-30
+org_ofqewaou,analytics,gaming,pro,6,20.4674,15.715,7.4777,0.43,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-30
+org_y9v86wzs,compute,retail,pro,3,18.6212,20.3791,9.6287,-0.12,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-07-30
+org_zbikcidk,compute,retail,pro,3,1.3758,20.452,10.0478,-1.28,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-01
+org_ktakpuxq,compute,fintech,pro,12,30.8583,40.2664,12.0767,-0.53,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-01
+org_rixa11dp,genai,government,standard,6,13.1879,27.6611,9.7358,-1.0,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-01
+org_sg65kxvf,database,e-commerce,standard,3,2.267,11.7359,5.0951,-1.25,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-01
+org_dhylurtp,database,fintech,pro,3,6.7418,8.4123,5.3747,-0.21,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-01
+org_l58kxo9t,compute,e-commerce,pro,3,1.8254,18.253,7.5389,-1.47,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-02
+org_c11ertj5,storage,retail,pro,3,0.2282,3.5941,1.512,-1.5,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-02
+org_teiyzcot,analytics,healthcare,pro,6,8.1476,18.4017,7.4749,-0.93,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-02
+org_nam148p0,storage,government,standard,9,4.1782,8.0225,3.3164,-0.78,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-02
+org_8mdd4v30,storage,manufacturing,standard,3,0.109,2.5646,0.5749,-2.88,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-03
+org_he7ur23g,compute,gaming,free,6,28.9445,28.9658,10.9074,0.0,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-03
+org_jxepq85j,storage,gaming,free,3,50.4333,4.3516,1.7334,17.93,False,True,False,pico_relativo_serie,2026-11-17 09:36:36.045225,2025-08-03
+org_ly8ozcyw,analytics,government,standard,6,25.9416,15.2636,4.736,1.52,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-03
+org_4zw9xa3k,analytics,manufacturing,standard,6,17.346,17.4843,9.2386,-0.01,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-04
+org_he7ur23g,compute,gaming,free,3,225.2637,28.9658,10.9074,12.14,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-08-04
+org_pseimvih,storage,fintech,standard,6,50.4994,4.7616,2.628,11.74,False,True,False,pico_relativo_serie,2026-11-17 09:36:36.045225,2025-08-04
+org_g8sbi4q2,database,gaming,standard,3,142.947,10.3302,3.3226,26.92,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-08-05
+org_c11ertj5,genai,retail,pro,3,265.2402,17.7948,13.0387,12.8,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-08-05
+org_ujv6oh9s,storage,energy,enterprise,6,3.1279,6.1533,2.9173,-0.7,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-05
+org_okep7y6w,networking,education,enterprise,3,18.6546,2.2006,1.1605,9.56,False,True,False,pico_relativo_serie,2026-11-17 09:36:36.045225,2025-08-05
+org_1n13jcat,compute,healthcare,free,3,-5.9725,21.34,12.1928,-1.51,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-05
+org_cvs4f8cg,genai,gaming,standard,3,222.5863,18.6679,7.0455,19.52,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-08-05
+org_1t2tala7,compute,media,enterprise,6,28.5614,22.286,10.3205,0.41,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-06
+org_253j2d54,compute,gaming,standard,3,16.969,12.6346,6.2722,0.47,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-06
+org_pnsm43d8,networking,manufacturing,standard,3,7.8367,1.8872,0.6756,5.94,False,True,False,pico_relativo_serie,2026-11-17 09:36:36.045225,2025-08-06
+org_zbikcidk,storage,retail,pro,3,0.703,3.4854,1.4544,-1.29,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-06
+org_0lvsnujz,analytics,retail,standard,6,9.3894,17.0577,9.0405,-0.57,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-06
+org_5lxo6qji,compute,healthcare,free,6,195.9243,23.3502,9.7622,11.92,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-08-07
+org_afeyuhz1,compute,education,standard,6,243.2824,19.4832,8.9003,16.96,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-08-07
+org_okep7y6w,compute,education,enterprise,3,191.8968,11.1426,2.7475,44.37,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-08-07
+org_1swjckjl,database,government,standard,15,23.3404,24.6874,7.8896,-0.12,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-07
+org_w3zp08j3,networking,education,standard,3,-0.1669,1.4849,0.4944,-2.25,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-07
+org_0lzjjege,storage,media,standard,6,52.9431,4.7356,2.0059,16.21,False,True,False,pico_relativo_serie,2026-11-17 09:36:36.045225,2025-08-07
+org_5935a0l7,database,gaming,standard,6,17.5004,14.6994,5.7523,0.33,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-08
+org_pnsm43d8,networking,manufacturing,standard,3,1.8505,1.8872,0.6756,-0.04,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-08
+org_pseimvih,storage,fintech,standard,6,60.5768,4.7616,2.628,14.33,False,True,False,pico_relativo_serie,2026-11-17 09:36:36.045225,2025-08-08
+org_53lc58dr,genai,energy,standard,3,12.603,26.6217,11.2874,-0.84,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-08
+org_g8sbi4q2,networking,gaming,standard,3,0.9423,1.4583,1.0366,-0.34,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-08
+org_he7ur23g,database,gaming,free,3,4.9737,7.3123,4.0826,-0.39,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-09
+org_uzfk8ut0,genai,government,standard,3,30.9557,23.1039,7.5749,0.7,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-09
+org_pac56t4u,database,healthcare,enterprise,3,8.2044,10.5364,5.1652,-0.3,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-09
+org_g8sbi4q2,storage,gaming,standard,3,51.4173,5.6473,2.8545,10.82,False,True,False,pico_relativo_serie,2026-11-17 09:36:36.045225,2025-08-09
+org_chj755nf,compute,fintech,pro,9,204.7546,22.2086,10.3776,11.86,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-08-09
+org_cvs4f8cg,database,gaming,standard,3,10.7285,7.4,4.4501,0.5,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-09
+org_cwi64ciy,compute,media,standard,9,242.6097,34.0844,11.0881,12.68,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-08-10
+org_pht0hl9x,storage,government,pro,3,0.345,4.1305,1.464,-1.74,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-10
+org_5935a0l7,compute,gaming,standard,3,200.4531,19.4395,8.0837,15.1,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-08-10
+org_9mx2x18h,database,retail,standard,6,147.3464,11.2674,4.4536,20.61,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-08-10
+org_cwi64ciy,compute,media,standard,6,21.9177,34.0844,11.0881,-0.74,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-11
+org_253j2d54,compute,gaming,standard,3,9.4213,12.6346,6.2722,-0.35,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-11
+org_874frhoc,storage,healthcare,free,3,-0.8312,3.5399,1.5994,-1.84,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-11
+org_pbhsahxt,genai,education,standard,6,35.2158,30.663,13.9228,0.22,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-11
+org_41ibljh7,networking,education,standard,3,19.3869,1.3917,0.5852,20.74,False,True,False,pico_relativo_serie,2026-11-17 09:36:36.045225,2025-08-12
+org_afeyuhz1,compute,education,standard,6,-8.66,19.4832,8.9003,-2.13,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-13
+org_n9j2qp89,genai,retail,standard,3,14.2095,17.6855,11.8217,-0.2,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-13
+org_rixa11dp,genai,government,standard,3,17.0289,27.6611,9.7358,-0.74,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-13
+org_sg65kxvf,database,e-commerce,standard,6,10.277,11.7359,5.0951,-0.19,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-13
+org_cvs4f8cg,compute,gaming,standard,3,28.5839,9.7194,2.4861,5.12,False,True,False,pico_relativo_serie,2026-11-17 09:36:36.045225,2025-08-13
+org_dhylurtp,compute,fintech,pro,3,21.569,20.2929,9.7117,0.09,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-13
+org_l58kxo9t,storage,e-commerce,pro,3,2.0054,2.824,0.9426,-0.59,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-13
+org_253j2d54,analytics,gaming,standard,3,176.9425,9.9322,6.7737,16.63,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-08-14
+org_h2m5zja8,networking,manufacturing,standard,6,2.0059,2.8812,1.2027,-0.49,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-14
+org_fel6246h,compute,gaming,standard,3,175.9686,11.6422,5.2463,21.13,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-08-14
+org_53lc58dr,networking,energy,standard,3,-1.1414,2.2659,0.8457,-2.72,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-14
+org_g8sbi4q2,compute,gaming,standard,3,10.6464,11.4758,4.7548,-0.12,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-15
+org_g0fn9xuy,storage,e-commerce,free,3,5.2228,3.1296,1.1946,1.18,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-15
+org_1n13jcat,database,healthcare,free,6,7.887,14.8599,4.4638,-1.05,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-16
+org_5iqvnb4g,networking,manufacturing,enterprise,6,1.4884,2.4831,1.1354,-0.59,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-16
+org_ujv6oh9s,analytics,energy,enterprise,3,-9.7337,9.6294,2.1978,-5.94,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-17
+org_chj755nf,compute,fintech,pro,9,237.4721,22.2086,10.3776,13.99,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-08-17
+org_d14ve92m,storage,education,pro,3,0.6223,4.0325,2.4956,-0.92,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-17
+org_fel6246h,storage,gaming,standard,3,4.9419,3.9993,1.1621,0.55,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-18
+org_ktakpuxq,compute,fintech,pro,9,38.8927,40.2664,12.0767,-0.08,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-18
+org_okep7y6w,storage,education,enterprise,6,9.8556,6.4094,3.2967,0.71,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-18
+org_phr62gds,analytics,education,enterprise,3,5.234,9.8607,4.6321,-0.67,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-18
+org_y9v86wzs,storage,retail,pro,3,3.8095,5.1133,2.3208,-0.38,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-18
+org_1t2tala7,analytics,media,enterprise,3,8.9076,11.2824,5.2194,-0.31,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-19
+org_tvhhpbmy,storage,healthcare,enterprise,3,2.8659,2.8569,0.8883,0.01,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-19
+org_sg65kxvf,genai,e-commerce,standard,9,57.4841,28.8878,14.3218,1.35,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-19
+org_kdgigatj,database,gaming,standard,3,5.7093,14.3557,6.0004,-0.97,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-19
+org_w3zp08j3,database,education,standard,3,-0.4688,12.4026,5.6855,-1.53,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-19
+org_1n13jcat,compute,healthcare,free,9,43.0588,21.34,12.1928,1.2,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-19
+org_ly8ozcyw,analytics,government,standard,6,13.0265,15.2636,4.736,-0.32,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-19
+org_ujv6oh9s,storage,energy,enterprise,9,71.9992,6.1533,2.9173,15.22,False,True,False,pico_relativo_serie,2026-11-17 09:36:36.045225,2025-08-20
+org_7e8g8jdp,networking,manufacturing,standard,3,1.061,1.4303,1.076,-0.23,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-20
+org_pbhsahxt,compute,education,standard,3,0.6052,18.4154,8.2818,-1.45,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-20
+org_okep7y6w,compute,education,enterprise,3,-3.9069,11.1426,2.7475,-3.69,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-21
+org_jxepq85j,networking,gaming,free,6,1.8741,2.2517,0.9053,-0.28,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-21
+org_0lvsnujz,storage,retail,standard,6,5.9399,5.2266,2.0989,0.23,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-21
+org_9mx2x18h,compute,retail,standard,3,14.134,11.5217,7.2327,0.24,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-21
+org_874frhoc,compute,healthcare,free,3,10.0277,14.0017,5.8038,-0.46,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-21
+org_h2m5zja8,networking,manufacturing,standard,6,0.2692,2.8812,1.2027,-1.46,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-22
+org_0lvsnujz,storage,retail,standard,6,44.4544,5.2266,2.0989,12.61,False,True,False,pico_relativo_serie,2026-11-17 09:36:36.045225,2025-08-22
+org_pbhsahxt,genai,education,standard,6,67.7289,30.663,13.9228,1.8,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-22
+org_n9j2qp89,compute,retail,standard,6,1.539,20.6201,11.1679,-1.15,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-22
+org_1t2tala7,compute,media,enterprise,6,257.364,22.286,10.3205,15.36,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-08-23
+org_c11ertj5,compute,retail,pro,6,14.4087,12.9287,5.7593,0.17,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-23
+org_9t84azyt,database,fintech,enterprise,6,147.5435,13.5028,6.2401,14.49,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-08-23
+org_teiyzcot,compute,healthcare,pro,3,224.113,18.2411,6.4961,21.38,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-08-23
+org_dbdw2pcn,database,retail,standard,3,5.0808,9.3202,3.1344,-0.91,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-23
+org_kdgigatj,database,gaming,standard,6,6.3949,14.3557,6.0004,-0.89,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-23
+org_pja1wj0t,compute,education,standard,3,205.8369,19.2343,9.1362,13.78,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-08-23
+org_hv3a3zmf,networking,media,pro,3,0.3103,1.4104,0.4339,-1.71,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-23
+org_pbhsahxt,database,education,standard,3,-7.5446,7.6009,4.9134,-2.08,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-23
+org_x7eedtjv,compute,energy,pro,3,211.2481,13.8981,4.3827,30.37,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-08-23
+org_cwi64ciy,networking,media,standard,3,27.2063,1.4846,0.8166,21.25,False,True,False,pico_relativo_serie,2026-11-17 09:36:36.045225,2025-08-23
+org_dhylurtp,database,fintech,pro,6,18.2029,8.4123,5.3747,1.23,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-23
+org_1swjckjl,database,government,standard,12,24.9574,24.6874,7.8896,0.02,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-24
+org_w3zp08j3,networking,education,standard,3,0.0672,1.4849,0.4944,-1.93,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-24
+org_41ibljh7,compute,education,standard,3,31.0386,11.5044,2.0992,6.28,False,True,False,pico_relativo_serie,2026-11-17 09:36:36.045225,2025-08-24
+org_pbhsahxt,genai,education,standard,6,19.2484,30.663,13.9228,-0.55,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-24
+org_rixa11dp,genai,government,standard,6,340.5259,27.6611,9.7358,21.68,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-08-24
+org_vyie6ivw,storage,government,pro,3,0.054,4.8837,2.1088,-1.54,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-24
+org_0lvsnujz,analytics,retail,standard,3,-134.2431,17.0577,9.0405,-11.29,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-24
+org_n9j2qp89,analytics,retail,standard,3,1.1893,9.4564,5.9954,-0.93,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-24
+org_i7p5tb94,compute,manufacturing,free,6,33.0035,17.2472,7.5089,1.42,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-25
+org_h2m5zja8,networking,manufacturing,standard,9,1.8232,2.8812,1.2027,-0.59,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-25
+org_l58kxo9t,networking,e-commerce,pro,3,1.0877,1.5842,0.9141,-0.37,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-25
+org_pac56t4u,database,healthcare,enterprise,3,150.5858,10.5364,5.1652,18.29,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-08-25
+org_pht0hl9x,analytics,government,pro,3,257.042,14.6066,5.4627,29.93,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-08-25
+org_sg65kxvf,genai,e-commerce,standard,6,4.4196,28.8878,14.3218,-1.15,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-26
+org_kdgigatj,database,gaming,standard,3,133.8056,14.3557,6.0004,13.43,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-08-26
+org_5935a0l7,networking,gaming,standard,6,27.9664,2.0717,0.8219,21.25,False,True,False,pico_relativo_serie,2026-11-17 09:36:36.045225,2025-08-26
+org_dhylurtp,database,fintech,pro,6,1.62,8.4123,5.3747,-0.85,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-26
+org_c11ertj5,storage,retail,pro,3,50.5291,3.5941,1.512,20.94,False,True,False,pico_relativo_serie,2026-11-17 09:36:36.045225,2025-08-27
+org_i7p5tb94,storage,manufacturing,free,3,57.9049,5.2481,2.3046,15.41,False,True,False,pico_relativo_serie,2026-11-17 09:36:36.045225,2025-08-27
+org_8mdd4v30,database,manufacturing,standard,6,22.4911,11.8433,5.6697,1.27,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-27
+org_chj755nf,compute,fintech,pro,6,31.9243,22.2086,10.3776,0.63,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-27
+org_nam148p0,database,government,standard,3,0.6996,7.1804,2.7472,-1.59,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-27
+org_dhylurtp,database,fintech,pro,6,19.5305,8.4123,5.3747,1.4,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-27
+org_1n13jcat,storage,healthcare,free,3,0.0668,2.5622,2.111,-0.8,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-28
+org_ujv6oh9s,storage,energy,enterprise,6,2.831,6.1533,2.9173,-0.77,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-28
+org_wm31yiha,database,healthcare,standard,3,2.1311,7.48,3.1829,-1.13,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-28
+org_5lxo6qji,database,healthcare,free,3,0.6227,7.4016,1.9117,-2.39,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-28
+org_chj755nf,compute,fintech,pro,6,4.2589,22.2086,10.3776,-1.17,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-28
+org_dppq0y9d,genai,manufacturing,standard,3,7.0104,27.8957,12.9861,-1.08,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-28
+org_gv0e38da,storage,government,pro,3,0.1671,2.7873,1.955,-0.9,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-29
+org_he7ur23g,compute,gaming,free,9,20.4615,28.9658,10.9074,-0.53,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-29
+org_d14ve92m,storage,education,pro,6,4.3494,4.0325,2.4956,0.09,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-29
+org_0lvsnujz,analytics,retail,standard,3,235.7677,17.0577,9.0405,16.32,True,True,False,pico_regla_global + pico_relativo_serie,2026-11-17 09:36:36.045225,2025-08-29
+org_kdgigatj,compute,gaming,standard,6,17.7871,28.2806,9.9852,-0.71,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-29
+org_5935a0l7,database,gaming,standard,6,7.3683,14.6994,5.7523,-0.86,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-30
+org_he7ur23g,compute,gaming,free,12,53.4133,28.9658,10.9074,1.51,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-30
+org_ir4cowgz,database,manufacturing,standard,6,11.5771,11.6596,5.9589,-0.01,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-30
+org_4zw9xa3k,storage,manufacturing,standard,3,0.0264,2.6419,2.0616,-0.86,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-30
+org_c11ertj5,compute,retail,pro,6,170.0038,12.9287,5.7593,18.4,True,True,True,pico_regla_global + pico_relativo_serie + costo_negativo,2026-11-17 09:36:36.045225,2025-08-31
+org_pbhsahxt,database,education,standard,3,-4.7348,7.6009,4.9134,-1.69,False,False,True,costo_negativo,2026-11-17 09:36:36.045225,2025-08-31
