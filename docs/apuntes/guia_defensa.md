@@ -1,5 +1,7 @@
 # Guía de defensa · Entrega 1
 
+> Para la entrega 2 (implementación), ver [`guia_defensa_entrega2.md`](guia_defensa_entrega2.md) y [`conceptos_entrega2.md`](conceptos_entrega2.md).
+
 Para cada sección: la idea en una frase, los números que hay que saber y las preguntas probables.
 
 ---
