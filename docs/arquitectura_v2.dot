@@ -1,0 +1,74 @@
+digraph arquitectura_v2 {
+  graph [rankdir=LR, fontname="Helvetica", fontsize=13, nodesep=0.35, ranksep=0.5, splines=spline, bgcolor="white", pad=0.3, newrank=true];
+  node  [fontname="Helvetica", fontsize=11, shape=box, style="rounded,filled", fillcolor="#ffffff", color="#8a8984", penwidth=1.2, margin="0.15,0.08"];
+  edge  [fontname="Helvetica", fontsize=9, color="#52514e", arrowsize=0.7, fontcolor="#52514e"];
+
+  subgraph cluster_src { label=<<b>Fuentes</b> · dataset del caso>; style="rounded,dashed"; color="#b9b8b2";
+    f1 [label=<<b>Maestros</b><br/>customers_orgs · users · resources<br/><font color="#52514e"><i>CSV</i></font>>];
+    f3 [label=<<b>Facturación</b><br/>billing_monthly<br/><font color="#52514e"><i>CSV</i></font>>];
+    f4 [label=<<b>Eventos de uso</b><br/>usage_events_stream/*.jsonl<br/><font color="#52514e"><i>120 micro-lotes · 43.200 eventos</i></font>>];
+    fx [style="rounded,dashed", fontcolor="#8a8984", color="#b9b8b2", label=<support_tickets · nps_surveys<br/>marketing_touches<br/><i>backlog (entrega final)</i>>];
+  }
+
+  land [shape=cylinder, fillcolor="#eceae4", color="#6b6a64", label=<<b>LANDING</b><br/>inmutable · Google Drive<br/><font color="#52514e"><i>E2_00 la copia una sola vez</i></font>>];
+
+  subgraph cluster_env { label=<<b>Google Colab · PySpark 4.0.5</b> · se trabaja en disco local y se sincroniza a Drive (rsync por zona)>; style="rounded"; color="#9a9994"; fontcolor="#0b0b0b";
+
+    subgraph cluster_batch { label=<<b>Camino batch</b>>; style="rounded,filled"; fillcolor="#f7f7f5"; color="#b9b8b2";
+      b1 [label=<<b>E2_01 · Ingesta batch</b><br/>schema explícito · PERMISSIVE<br/>dedupe por clave natural<br/>linaje: source_file · ingest_ts · batch_id>];
+      b2 [shape=cylinder, fillcolor="#f3dcc4", color="#a8642a", label=<<b>BRONZE</b> maestros<br/>orgs · users · resources: ingest_date<br/>billing_monthly: month>];
+      b1 -> b2;
+    }
+
+    subgraph cluster_speed { label=<<b>Camino streaming</b> · Structured Streaming>; style="rounded,filled"; fillcolor="#f2f6fc"; color="#9ec5f4";
+      s1 [label=<<b>E2_02 · readStream JSONL</b><br/>availableNow · 10 archivos por lote<br/>① checkpoint<br/>② watermark 1 h (ingest_ts) +<br/>dropDuplicatesWithinWatermark>];
+      s4 [label=<<b>foreachBatch</b><br/>③ anti-join event_id vs Bronze<br/>log por lote>];
+      s2 [shape=cylinder, fillcolor="#f3dcc4", color="#a8642a", label=<<b>BRONZE</b> usage_events<br/>partición event_date>];
+      s1 -> s4 -> s2;
+    }
+
+    sv [label=<<b>E2_03 · Silver</b><br/>try_cast · unit deducida · features<br/>flags: costo &lt; −0,01 · pico &gt; 5×p99<br/>broadcast join orgs + resources<br/>5 reglas duras → quarantine>];
+    s3 [shape=cylinder, fillcolor="#e3e6ea", color="#6c7686", label=<<b>SILVER</b><br/>usage_events: event_date · service<br/>customers_orgs (NPS + flag)>];
+    q  [shape=cylinder, fillcolor="#f6d0d0", color="#c03a3a", label=<<b>QUARANTINE</b><br/>registro + motivo<br/>+ zona_origen>];
+
+    g0 [label=<<b>E2_04 · Gold</b><br/>recalcula fechas completas<br/>④ dedupe event_id · groupBy<br/>overwrite solo esas particiones>];
+    a0 [label=<<b>E2_07 · Analítica</b><br/>z robusto (MAD) por serie<br/>org × servicio · umbral 5>];
+
+    subgraph cluster_gold { label=<<b>GOLD</b> · Parquet · partición event_date · 1 archivo por día>; style="rounded,filled"; fillcolor="#fdf7e1"; color="#d9b84a";
+      node [fillcolor="#f8e7a8", color="#b08a00"];
+      g1 [label=<org_daily_usage_by_service<br/><font color="#52514e"><i>11.050 filas · org × día × servicio</i></font>>];
+      g2 [label=<cost_anomaly_mart<br/><font color="#52514e"><i>289 filas · con motivo</i></font>>];
+    }
+
+    t5 [style="rounded,dashed", color="#6c7686", label=<<b>E2_05 · Pruebas controladas</b><br/>sandbox pruebas/: stream → Silver → Gold<br/>duplicado · tardío · fallo · dup. en Silver>];
+  }
+
+  subgraph cluster_srv { label=<<b>SERVING</b> · AstraDB · keyspace finops>; style="rounded,filled"; fillcolor="#eaf2fd"; color="#2a78d6";
+    node [shape=cylinder, fillcolor="#d6e6fa", color="#2a78d6"];
+    c1 [label=<<b>org_daily_usage_by_service</b><br/>PK ((org_id, usage_month),<br/>usage_date DESC, service)>];
+    c2 [label=<<b>cost_anomalies_by_date</b><br/>PK ((usage_date), org_id, service)>];
+  }
+  e6 [label=<<b>E2_06 · Carga</b><br/>driver Python · execute_concurrent<br/>upsert · LOCAL_QUORUM>];
+
+  subgraph cluster_use { label=<<b>Consumo</b>>; style="rounded,dashed"; color="#b9b8b2";
+    u1 [label=<<b>FinOps</b><br/>Q1 gasto por org y rango<br/>Q2 anomalías del día>];
+    ux [style="rounded,dashed", fontcolor="#8a8984", color="#b9b8b2", label=<Soporte · Producto<br/><i>backlog</i>>];
+  }
+
+  {f1 f3} -> land; f4 -> land;
+  fx -> land [style=dashed, color="#b9b8b2"];
+  land -> b1 [label="CSV"];
+  land -> s1 [label="JSONL\n(llegada simulada)"];
+  b2 -> sv [label="dimensiones\n(último snapshot)"];
+  s2 -> sv;
+  sv -> s3;
+  sv -> q [style=dotted, color="#c03a3a", label="inválidos", fontcolor="#c03a3a"];
+  b1 -> q [style=dotted, color="#c03a3a", label="parse_error", fontcolor="#c03a3a"];
+  s3 -> g0 -> g1;
+  g1 -> a0 -> g2;
+  g1 -> e6 -> c1;
+  e6 -> c2 [label="días con\nanomalías"];
+  c1 -> u1; c2 -> u1;
+  c2 -> ux [style=invis];
+  s2 -> t5 [style=dashed, color="#6c7686", arrowhead=none];
+}
