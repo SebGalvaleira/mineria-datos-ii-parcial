@@ -1,2 +1,6 @@
 .venv/
 .ipynb_checkpoints/
+# credenciales de AstraDB: nunca al repo
+secure-connect-*.zip
+*.token
+.env
