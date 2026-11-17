@@ -1,7 +1,0 @@
-metodo,marcados,coinciden_con_regla,nuevas,picos_perdidos,recall_vs_regla
-z-score clásico > 3 (por serie),93,49,44,0,1.0
-percentil 99 (por servicio),114,49,65,0,1.0
-MAD z robusto > 3.5 (por serie),124,49,75,0,1.0
-MAD z robusto > 5 (por serie),82,49,33,0,1.0
-MAD z robusto > 7 (por serie),75,49,26,0,1.0
-MAD z robusto > 10 (por serie),72,48,24,1,0.98
