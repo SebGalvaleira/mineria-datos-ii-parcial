@@ -1,0 +1,12 @@
+org_id,service,daily_cost_usd,eventos_pico,eventos_costo_anomalo,industry,plan_tier
+org_1t2tala7,compute,257.364,1,0,media,enterprise
+org_teiyzcot,compute,224.113,1,0,healthcare,pro
+org_x7eedtjv,compute,211.2481,1,0,energy,pro
+org_pja1wj0t,compute,205.8369,1,0,education,standard
+org_9t84azyt,database,147.5435,1,0,fintech,enterprise
+org_dhylurtp,database,18.2029,0,1,fintech,pro
+org_c11ertj5,compute,14.4087,0,1,retail,pro
+org_kdgigatj,database,6.3949,0,1,gaming,standard
+org_dbdw2pcn,database,5.0808,0,1,retail,standard
+org_hv3a3zmf,networking,0.3103,0,1,media,pro
+org_pbhsahxt,database,-7.5446,0,1,education,standard
